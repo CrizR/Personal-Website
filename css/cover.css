@@ -1,6 +1,3 @@
-/*
- * Globals
- */
 
 /* Links */
 a,
@@ -19,14 +16,6 @@ a:hover {
     border: 1px solid #fff;
 }
 
-.title {
-    text-align: center;
-    align-content: center;
-    vertical-align: middle;
-    padding: 0;
-    font-size: 45px;
-}
-
 /*
  * Base structure
  */
@@ -35,90 +24,13 @@ ul {
     list-style: none;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text-contact], select, textarea {
-    color: black;
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit-contact] {
-    background: white;
-    color: black;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit-contact]:hover {
-    background: #00d2ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-.flag {
-    margin: 50px;
-    margin-top: 200px;
-    display: inline-block;
-    color: white;
-    width: 20%;
-    height: 400px;
-    padding-top: 3%;
-    border: 1px solid #fff;
-    position: static;
-    background-color: rgba(255, 255, 255, .3);
-}
-
-.flag-text {
-    float: left;
-    text-align: left;
-}
-
-
-.flag:hover {
-
-}
-
-
-.blog-container {
-    padding-top: 15%;
-}
-
-.blog-entries {
-    border: 1px solid white;
-    vertical-align: baseline;
-    text-align: left;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.entry {
-    font-size: 15px;
-    padding: 20px;
-    border-bottom: 2px solid white;
-    border-radius: 5px;
-}
-
-.entry-list {
-    list-style: circle;
-}
 
 html,
 body {
     -webkit-perspective: 1000px;
-    background: #e53935;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #457fca; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5691c8, #457fca); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     background-size: cover;
     padding: 0;
@@ -127,10 +39,6 @@ body {
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
-}
-
-.mastfoot {
-    padding-top: 100px;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -214,10 +122,6 @@ body {
     }
 }
 
-.instagram-media {
-    float: left;
-
-}
 
 .embed-container {
     position: relative;
@@ -246,7 +150,7 @@ body {
 }
 
 .avatar .me {
-    width: 16%;
+    width: 150px;
     height: 13%;
     padding: 5px;
     border: 1px solid white;
@@ -254,59 +158,38 @@ body {
     position: relative;
     z-index: 5;
     vertical-align: middle;
-    margin-bottom: -40px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background: #2F3336;
 }
 
 .container {
     border: 1px solid white;
-    background-color: #fff;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.4);
+    /*background-color: #72A0D2;*/
+    background: #2F3336;
     width: 70%;
-    /*padding-top: 50px;*/
     height: 30%;
     position: relative;
     z-index: 0;
     margin-bottom: 40px;
+    border-radius: 25px;
 }
 
+@media all and (max-width: 1700px) {
+    .floated_div {
+        display: none;
+    }
 
+    .LI-simple-link {
+        display: none;
+    }
+
+    .LI-profile-badge {
+        display: none;
+    }
+}
 
 .main {
     z-index: 0;
     padding-top: 100px;
-}
-
-.text-area-blog {
-    border-color: white;
-    color: white;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-textarea::-webkit-input-placeholder {
-    color: white !important;
-}
-
-textarea:-moz-placeholder { /* Firefox 18- */
-    color: white !important;
-}
-
-textarea::-moz-placeholder { /* Firefox 19+ */
-    color: white !important;
-}
-
-textarea:-ms-input-placeholder {
-    color: white !important;
-}
-
-.post-blog {
-    color: white;
-    width: 20%;
-    border-radius: 5px;
-    border-color: white;
-    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .inner-container .text {
@@ -315,7 +198,6 @@ textarea:-ms-input-placeholder {
     width: 100%;
     height: 100%;
     padding: 5px;
-    border-radius: 5px;
     padding-bottom: 10px;
     border-bottom: 1px solid white;
     font-size: 15px;
@@ -409,13 +291,13 @@ textarea:-ms-input-placeholder {
     width: 75%;
     -moz-animation: cplus 2s ease-out;
     -webkit-animation: cplus 2s ease-out;
-    background-color: #a1ce5b;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
-    background-image: -webkit-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: -moz-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: -ms-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: -o-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: linear-gradient(top, #a1ce5b, #91ba52);
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+    background-image: -webkit-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -moz-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -ms-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -o-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: linear-gradient(top, #66b3cc, #5da3ba)
 
 }
 
@@ -436,40 +318,39 @@ textarea:-ms-input-placeholder {
     width: 99%;
     -moz-animation: java 2s ease-out;
     -webkit-animation: java 2s ease-out;
-    background-color: #a1ce5b;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
-    background-image: -webkit-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: -moz-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: -ms-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: -o-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: linear-gradient(top, #a1ce5b, #91ba52);
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+    background-image: -webkit-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -moz-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -ms-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -o-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: linear-gradient(top, #66b3cc, #5da3ba)
 }
-
 
 .php {
     width: 80%;
     -moz-animation: php 2s ease-out;
     -webkit-animation: php 2s ease-out;
-    background-color: #a1ce5b;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
-    background-image: -webkit-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: -moz-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: -ms-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: -o-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: linear-gradient(top, #a1ce5b, #91ba52);
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+    background-image: -webkit-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -moz-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -ms-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -o-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: linear-gradient(top, #66b3cc, #5da3ba)
 }
 
 .aws {
     width: 50%;
     -moz-animation: aws 2s ease-out;
     -webkit-animation: aws 2s ease-out;
-    background-color: #a1ce5b;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
-    background-image: -webkit-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: -moz-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: -ms-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: -o-linear-gradient(top, #a1ce5b, #91ba52);
-    background-image: linear-gradient(top, #a1ce5b, #91ba52);
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+    background-image: -webkit-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -moz-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -ms-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -o-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: linear-gradient(top, #66b3cc, #5da3ba)
 }
 
 .python {
@@ -514,7 +395,7 @@ textarea:-ms-input-placeholder {
 
 @-moz-keyframes java {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 100%;
@@ -523,7 +404,7 @@ textarea:-ms-input-placeholder {
 
 @-moz-keyframes html-css {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 75%;
@@ -532,7 +413,7 @@ textarea:-ms-input-placeholder {
 
 @-moz-keyframes python {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 80%;
@@ -541,7 +422,7 @@ textarea:-ms-input-placeholder {
 
 @-moz-keyframes sql {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 60%;
@@ -550,7 +431,7 @@ textarea:-ms-input-placeholder {
 
 @-moz-keyframes cplus {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 75%;
@@ -559,7 +440,7 @@ textarea:-ms-input-placeholder {
 
 @-moz-keyframes javascript {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 20%;
@@ -568,7 +449,7 @@ textarea:-ms-input-placeholder {
 
 @-moz-keyframes php {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 80%;
@@ -577,7 +458,7 @@ textarea:-ms-input-placeholder {
 
 @-moz-keyframes aws {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 50%;
@@ -586,7 +467,7 @@ textarea:-ms-input-placeholder {
 
 @-webkit-keyframes java {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 99%;
@@ -595,7 +476,7 @@ textarea:-ms-input-placeholder {
 
 @-webkit-keyframes html-css {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 75%;
@@ -604,7 +485,7 @@ textarea:-ms-input-placeholder {
 
 @-webkit-keyframes python {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 80%;
@@ -613,7 +494,7 @@ textarea:-ms-input-placeholder {
 
 @-webkit-keyframes cplus {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 75%;
@@ -622,7 +503,7 @@ textarea:-ms-input-placeholder {
 
 @-webkit-keyframes sql {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 60%;
@@ -631,7 +512,7 @@ textarea:-ms-input-placeholder {
 
 @-webkit-keyframes javascript {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 20%;
@@ -640,7 +521,7 @@ textarea:-ms-input-placeholder {
 
 @-webkit-keyframes php {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 80%;
@@ -649,7 +530,7 @@ textarea:-ms-input-placeholder {
 
 @-webkit-keyframes aws {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
         width: 50%;
@@ -675,21 +556,31 @@ textarea:-ms-input-placeholder {
     }
 }
 
-.contact-info {
-    align-content: center;
-    align-self: center;
-}
 
-.contact-info li {
-    display: inline-block;
-    list-style: none;
-    font-size: 15px;
-    padding-right: 10px;
-    color: #fff;
-    line-height: 250px;
-    text-align: center;
-}
+@keyframes bounceInDown {
+    from, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
 
-.container-contact {
-    padding-top: 150px;
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, 5px, 0);
+    }
+
+    to {
+        transform: none;
+    }
 }

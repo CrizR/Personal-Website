@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head profile="http://www.w3.org/2005/10/profile">
-    <link rel="icon"
-          type="image/png"
-          href="images/flav.png">
+    <!--<link rel="icon"-->
+          <!--type="image/png"-->
+          <!--href="images/flav.png">-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,6 +24,11 @@
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
 
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 </head>
 <body class="index">
 <div class="site-wrapper">
@@ -31,34 +36,74 @@
         <div class="cover-container">
             <div class="masthead clearfix">
                 <div class="inner">
+                    <div
+                            style="
+                            position: fixed;
+                            width: 300px;
+                            height: 250px;
+                            float: left;
+                            background: #2F3336;
+                            border-radius: 25px;
+                            text-align: left;
+                            margin-left: 400px;"
+                            data-version="v1"
+                            data-size="medium"
+                            data-locale="en_US"
+                            data-type="horizontal"
+                            data-theme="dark"
+                            data-vanity="christopherrisley"
+                            class="LI-profile-badge"
+                    >
+                        <a class="LI-simple-link"
+                           href='https://www.linkedin.com/in/christopherrisley?trk=profile-badge'></a>
+                    </div>
                     <nav>
                         <ul class="nav masthead-nav">
                             <li class="active"><a href="index.html">Home</a></li>
                             <li><a href="https://www.linkedin.com/in/christopherrisley/" target="_blank">Experience</a>
                             </li>
                             <li><a href="https://github.com/CrizR" target="_blank">GitHub</a></li>
-                            <!--<li><a href="projects.html">Projects</a></li>-->
                         </ul>
                     </nav>
+                    <iframe src="http://githubbadge.appspot.com/CrizR"
+                            style="
+                              width: 300px;
+                            height: 250px;
+                            margin-top: -43px;
+                            background: #2F3336;
+                            padding-top: 20px;
+                            margin-right: 400px;
+                            border-radius: 25px;
+                            float: right;
+                            border: 0;
+                            overflow: hidden;"
+                            frameBorder="0"
+                            class="floated_div"
+                    >
+                    </iframe>
                 </div>
             </div>
 
             <article class="main">
                 <div class="avatar">
-                    <img class="me" src="images/avatar.jpg" alt="ChrisRisleyPhoto" width=25% height=300px>
+                    <img class="me" src="images/avatar.jpg" alt="Chris Risley Avat" width=25% height=300px>
                 </div>
                 <section class="container">
                     <div class="inner-container">
                         <h3>Overview</h3>
                         <p class="text">
-                            Born in Portola Valley, CA in the heart of Silicon Valley, I've always been interested in the world
-                            of start-ups and technology. I'm currently studying computer science at Northeastern University where I've
-                            been taught the fundamentals of programming, discrete structures, and logic.
+                            Born in Portola Valley, CA in the heart of Silicon Valley, I've always been interested in
+                            the world
+                            of start-ups and technology. I'm currently studying computer science at Northeastern
+                            University where I've
+                            been taught the fundamentals of programming, discrete math, data structures, database management, web development, and more.
                         </p>
                         <h1>Hobbies</h1>
                         <p class="text">
-                            Enjoy rock climbing, mountaineering, dirt biking, and hiking. At Northeastern, I'm a part of the
-                            outdoor's club (NUHOC), ski club, and the rock climbing club. I'm hoping to get into mountain biking
+                            I enjoy rock climbing, mountaineering, dirt biking, and hiking. At Northeastern, I'm a part
+                            of the
+                            outdoor's club (NUHOC), ski club, and the rock climbing club. I'm hoping to get into
+                            mountain biking
                             if I have the time.
                         </p>
 
@@ -72,7 +117,9 @@
                     </div>
                 </section>
 
-                <section class = "container">
+
+
+                <section class="container">
                     <div class="inner-container">
                         <h3>Skills</h3>
                         <ul class="skills" id="skill">
@@ -97,22 +144,9 @@
                 </section>
             </article>
         </div>
-            <div class="mastfoot">
-                <!--<div class="inner">-->
-                    <!--<audio controls class="audio" id="song">-->
-                        <!--<source src="Song1.mp3" type="audio/mpeg">-->
-                        <!--Your browser does not support the audio element.-->
-                    <!--</audio>-->
-                <!--</div>-->
-            </div>
-
-        <!--<audio src="backgroundsound.mp3" autoplay>-->
-            <!--<p>If you are reading this, it is because your browser does not support the audio element.     </p>-->
-            <!--<embed src="backgroundsound.mp3" width="180" height="90" hidden="true" ></embed>-->
-        <!--</audio>-->
-
+        <div class="mastfoot">
         </div>
-
     </div>
+</div>
 </body>
 </html>
