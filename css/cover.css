@@ -221,7 +221,7 @@ body {
  * Affix and center
  */
 
-@media (min-width: 768px) {
+@media all and (min-width: 768px) {
     /* Pull out the header and footer */
     .masthead {
         position: fixed;
@@ -595,10 +595,19 @@ body {
     text-align: left;
     width: 100%;
     height: 100%;
-    padding: 5px;
-    padding-bottom: 10px;
-    /*border-bottom: 1px solid white;*/
+    padding: 5px 5px 10px;
     font-size: 15px;
 }
-.project-use {
+
+@media all and (max-width: 1000px) {
+    .project-description {
+        display: none;
+    }
+    .project-use {
+        display: none;
+    }
+    .project-title {
+        font-size: 15px;
+    }
+
 }
