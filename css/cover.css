@@ -569,6 +569,7 @@ body {
     display: inline-block;
     background: #2F3336;
     margin: 50px;
+    margin-top: 20px;
     border-radius: 25px;
     border: 1px solid white;
 
@@ -614,18 +615,60 @@ body {
         display: none;
     }
 
+    .calendar-body {
+        display: none;
+    }
+
+
+}
+
+
+@media all and (max-width: 500px) {
+    .project-description {
+        display: none;
+    }
+    .project-use {
+        display: none;
+    }
+    .project-title {
+        font-size: 10px;
+    }
+
+    .calendar {
+        display: none;
+    }
+    .calendar-body {
+        display: none;
+    }
+
 }
 
 .calendar {
-    width: 750px;
-    border: 1px solid #DDDDDD;
+    width: 730px;
+    /*border: 1px solid #DDDDDD;*/
     min-height: 243px;
     text-align: center;
+    background: #2F3336;
+    color: #2F3336;
+    border-radius: 25px;
+    text-shadow: none;
+    margin: 10px;
+}
+
+.calendar-body {
+    width: 750px;
     margin: 0 auto;
     margin-top: 10%;
     background: #2F3336;
     color: white;
     border-radius: 25px;
+    text-shadow: none;
+    border: 1px solid #DDDDDD;
+}
+
+.calendar-body h4 {
+    margin-top: 50px;
+    text-align: center;
 }
 
 .calendar-graph text.wday,
