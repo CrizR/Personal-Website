@@ -26,7 +26,11 @@
 
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
-
+    <!-- Include the library. -->
+    <script
+            src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
+    </script>
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
     <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         //http://yonaba.github.io/2012/08/14/List-your-GitHub-projects-using-JavaScript-and-jQuery.md.html
@@ -95,11 +99,19 @@
                     </nav>
                 </div>
             </div>
+            <!-- Prepare a container for your calendar. -->
+            <div class="calendar">
+                <!-- Loading stuff -->
+                Retrieving CrizR's Contribution Calendar
+            </div>
             <article class = "projects-wrapper">
                 <div id="github-projects"></div>
             </article>
         </div>
     </div>
 </div>
+<script>
+    GitHubCalendar(".calendar", "CrizR");
+</script>
 </body>
 </html>
