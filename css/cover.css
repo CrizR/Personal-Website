@@ -164,6 +164,7 @@ body {
 .container {
     border: 1px solid white;
     /*background-color: #72A0D2;*/
+    /*background-color: #72A0D2;*/
     background: #2F3336;
     width: 70%;
     height: 30%;
@@ -173,7 +174,7 @@ body {
     border-radius: 25px;
 }
 
-@media all and (max-width: 1700px) {
+@media all and (max-width: 1800px) {
     .floated_div {
         display: none;
     }
@@ -600,7 +601,18 @@ body {
     font-size: 15px;
 }
 
-@media all and (max-width: 1250px) {
+@media all and (max-width: 1000px){
+    .calendar-body {
+        display: none;
+    }
+    .projects-wrapper{
+        margin-top: 10%;
+    }
+
+
+}
+
+@media all and (max-width: 800px) {
     .project-description {
         display: none;
     }
@@ -610,7 +622,6 @@ body {
     .project-title {
         font-size: 15px;
     }
-
     .calendar {
         display: none;
     }
@@ -618,8 +629,6 @@ body {
     .calendar-body {
         display: none;
     }
-
-
 }
 
 
