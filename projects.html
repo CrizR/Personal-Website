@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
     <title>Chris Risley</title>
 
@@ -48,6 +47,7 @@
             $.githubUser(username, function(data) {
                 var repos = data.data; // JSON Parsing
                 sortByName(repos);
+                console.log(repos);
 
                 var list = $('<dl/>');
                 target.empty().append(list);
@@ -59,7 +59,7 @@
                             '<dt class = "project-title"><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a> ' +
                             '<em>'+(this.language?('('+this.language+')'):'')+'</em>' +
                             '<span id="star">&nbsp;&#9733; ' + this.stargazers_count +' </span>' +
-                            '<span id="eye">&nbsp;&#9737; ' + this.watchers +' </span></dt>' +
+                            '<span id="eye">&nbsp;&#9737; ' + this.watchers_count +' </span></dt>' +
                             '<p class = "project-description">' + this.description +'</p>' +
                             '<p class = "project-use">'+  'Last Updated' + ': '+ this.updated_at+'</p>' +
                             '</div></div>');
