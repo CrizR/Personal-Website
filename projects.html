@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head profile="http://www.w3.org/2005/10/profile">
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106814101-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)};
-        gtag('js', new Date());
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        gtag('config', 'UA-106814101-1');
+        ga('create', 'UA-106814101-1', 'auto');
+        ga('send', 'pageview');
+
     </script>
+
     <link rel="icon"
           type="image/png"
           href="images/flav.png">
@@ -67,8 +69,7 @@
                             '<div class = "project-inner">' +
                             '<dt class = "project-title"><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a> ' +
                             '<em>'+(this.language?('('+this.language+')'):'')+'</em>' +
-                            '<span id="star">&nbsp;&#9733; ' + this.stargazers_count +' </span>' +
-                            '<span id="eye">&nbsp;&#9737; ' + this.watchers_count +' </span></dt>' +
+                            '<span id="star">&nbsp;&#9733; ' + this.stargazers_count +' </span></dt>' +
                             '<p class = "project-description">' + this.description +'</p>' +
                             '<p class = "project-use">'+  'Last Updated' + ': '+ this.updated_at+'</p>' +
                             '</div></div>');
