@@ -149,16 +149,17 @@ body {
     color: rgba(255, 255, 255, .5);
 }
 
+
 .avatar .me {
-    width: 150px;
-    height: 13%;
-    padding: 3px;
-    border: 1px solid white;
+    margin-bottom: -30px;
+    width: 125px;
+    height: 3%;
+    padding: 1px;
+    border: 2px solid white;
     border-radius: 30px;
     position: relative;
     z-index: 5;
     vertical-align: middle;
-    background: #2F3336;
 }
 
 .container {
@@ -248,15 +249,18 @@ body {
 }
 
 #skill {
+    margin-top: -25px;
     list-style: none;
-    width: 100%;
+    width: 90%;
+    margin-left: 3%;
     position: relative;
     line-height: 2em;
     font-size: 10px;
 }
 
 #skill li {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    margin-left: 50px;
     background: #e9e5e2;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2));
     background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
@@ -264,7 +268,7 @@ body {
     background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
     background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
     background-image: linear-gradient(top, #e1ddd9, #e9e5e2);
-    height: 12px;
+    height: 8px;
     border-radius: 10px;
     -moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
     -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
@@ -273,12 +277,12 @@ body {
 
 #skill li h3 {
     position: relative;
-    top: -25px;
-    font-size: 15px;
+    margin-left: -78px;
+    font-size: 13px;
 }
 
 .bar {
-    height: 10px;
+    height: 6px;
     margin: 1px 2px;
     position: absolute;
     border-radius: 10px;
@@ -289,7 +293,7 @@ body {
 }
 
 .cplus {
-    width: 75%;
+    width: 65%;
     -moz-animation: cplus 2s ease-out;
     -webkit-animation: cplus 2s ease-out;
     background-color: #66b3cc;
@@ -303,7 +307,7 @@ body {
 }
 
 .html-css {
-    width: 75%;
+    width: 65%;
     -moz-animation: html-css 2s ease-out;
     -webkit-animation: html-css 2s ease-out;
     background-color: #66b3cc;
@@ -316,7 +320,7 @@ body {
 }
 
 .java {
-    width: 99%;
+    width: 80%;
     -moz-animation: java 2s ease-out;
     -webkit-animation: java 2s ease-out;
     background-color: #66b3cc;
@@ -329,7 +333,7 @@ body {
 }
 
 .php {
-    width: 80%;
+    width: 70%;
     -moz-animation: php 2s ease-out;
     -webkit-animation: php 2s ease-out;
     background-color: #66b3cc;
@@ -341,21 +345,8 @@ body {
     background-image: linear-gradient(top, #66b3cc, #5da3ba)
 }
 
-.aws {
-    width: 50%;
-    -moz-animation: aws 2s ease-out;
-    -webkit-animation: aws 2s ease-out;
-    background-color: #66b3cc;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
-    background-image: -webkit-linear-gradient(top, #66b3cc, #5da3ba);
-    background-image: -moz-linear-gradient(top, #66b3cc, #5da3ba);
-    background-image: -ms-linear-gradient(top, #66b3cc, #5da3ba);
-    background-image: -o-linear-gradient(top, #66b3cc, #5da3ba);
-    background-image: linear-gradient(top, #66b3cc, #5da3ba)
-}
-
 .python {
-    width: 80%;
+    width: 70%;
     -moz-animation: python 2s ease-out;
     -webkit-animation: python 2s ease-out;
     background-color: #66b3cc;
@@ -368,7 +359,7 @@ body {
 }
 
 .sql {
-    width: 60%;
+    width: 50%;
     -moz-animation: sql 2s ease-out;
     -webkit-animation: sql 2s ease-out;
     background-color: #66b3cc;
@@ -399,7 +390,7 @@ body {
         width: 0;
     }
     100% {
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -408,7 +399,7 @@ body {
         width: 0;
     }
     100% {
-        width: 75%;
+        width: 65%;
     }
 }
 
@@ -426,7 +417,7 @@ body {
         width: 0;
     }
     100% {
-        width: 60%;
+        width: 50%;
     }
 }
 
@@ -435,7 +426,7 @@ body {
         width: 0;
     }
     100% {
-        width: 75%;
+        width: 65%;
     }
 }
 
@@ -453,25 +444,15 @@ body {
         width: 0;
     }
     100% {
-        width: 80%;
+        width: 70%;
     }
 }
-
-@-moz-keyframes aws {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 50%;
-    }
-}
-
 @-webkit-keyframes java {
     0% {
         width: 0;
     }
     100% {
-        width: 99%;
+        width: 80%;
     }
 }
 
@@ -480,7 +461,7 @@ body {
         width: 0;
     }
     100% {
-        width: 75%;
+        width: 65%;
     }
 }
 
@@ -489,7 +470,7 @@ body {
         width: 0;
     }
     100% {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -498,7 +479,7 @@ body {
         width: 0;
     }
     100% {
-        width: 75%;
+        width: 65%;
     }
 }
 
@@ -507,7 +488,7 @@ body {
         width: 0;
     }
     100% {
-        width: 60%;
+        width: 50%;
     }
 }
 
@@ -525,18 +506,10 @@ body {
         width: 0;
     }
     100% {
-        width: 80%;
+        width: 70%;
     }
 }
 
-@-webkit-keyframes aws {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 50%;
-    }
-}
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
@@ -571,8 +544,9 @@ body {
     background: #2F3336;
     margin: 50px;
     margin-top: 20px;
-    border-radius: 25px;
+    border-radius: 100px;
     border: 1px solid white;
+    transition: all 0.5s cubic-bezier(0.6, -0.6, 0.2, 1.5);
 
 }
 
@@ -581,13 +555,18 @@ body {
 }
 
 .project-title {
-    font-size: 20px;
+    font-size: 15px;
+}
+
+.project-body:hover{
+    background: red;
+
 }
 
 
 .project-description {
     margin-top: 20px;
-    font-size: 15px;
+    font-size: 12px;
     text-align: left;
 
 }
@@ -598,13 +577,10 @@ body {
     width: 100%;
     height: 100%;
     padding: 5px 5px 10px;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 @media all and (max-width: 1000px){
-    .calendar-body {
-        display: none;
-    }
     .projects-wrapper{
         margin-top: 10%;
     }
@@ -612,7 +588,7 @@ body {
 
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
     .project-description {
         display: none;
     }
@@ -620,7 +596,7 @@ body {
         display: none;
     }
     .project-title {
-        font-size: 15px;
+        font-size: 12px;
     }
     .calendar {
         display: none;
@@ -659,7 +635,7 @@ body {
     text-align: center;
     background: #2F3336;
     color: #2F3336;
-    border-radius: 25px;
+    border-radius: 50px;
     text-shadow: none;
     margin: 10px;
 }
@@ -670,7 +646,7 @@ body {
     margin-top: 10%;
     background: #2F3336;
     color: white;
-    border-radius: 25px;
+    border-radius: 75px;
     text-shadow: none;
     border: 1px solid #DDDDDD;
 }
@@ -799,25 +775,69 @@ h2.f4.text-normal.mb-3 {
 footer {
     background: none;
 }
-.coinmarketcap-currency-widget{
-    /*position: fixed;*/
-    width: 300px;
-    height: 180px;
-    float: left;
+.test {
+    margin-top: 125px;
+}
+.test a {
+    color: #fff;
     background: #2F3336;
-    border-radius: 10px;
-    color: white;
-    text-align: left;
-    margin: 20px;
-    margin-top: 0;
-    border-style: none;
-
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-family: fontawesome;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding-top: 12px;
+    margin: 0 2px;
+    transition: all .5s;
 }
-
-#crypto1 {
-    margin-left: 400px;
+.test a:hover {
+    background: #ff0000;
 }
-
-#crypto2 {
-    margin-right: 400px;
+.test a:hover p {
+    border-radius: 30px;
+    bottom: 35px;
+    visibility: visible;
+}
+.test a p {
+    color: #666;
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    right: -25px;
+    padding: 5px 7px;
+    z-index: -1;
+    font-size: 14px;
+    border-radius: 2px;
+    background: #fff;
+    visibility: hidden;
+    transition: all 0.5s cubic-bezier(0.6, -0.6, 0.2, 1.5);
+}
+.test a p:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 40px;
+}
+.test a:nth-of-type(1):before {
+    content: '\f09a';
+}
+.test a:nth-of-type(2):before {
+    content: '\f0e0';
+}
+.test a:nth-of-type(3):before {
+    content: '\f08c';
+}
+.test a:nth-of-type(4):before {
+    content: '\f126';
+}
+.test a:nth-of-type(5):before {
+    content: '\f10b';
 }

@@ -32,14 +32,15 @@
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
 
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
 
 </head>
 <body class="index">
@@ -48,76 +49,50 @@
         <div class="cover-container">
             <div class="masthead clearfix">
                 <div class="inner">
-                    <div
-                            style="
-                            position: fixed;
-                            width: 300px;
-                            height: 250px;
-                            float: left;
-                            background: #2F3336;
-                            border-radius: 25px;
-                            text-align: left;
-                            margin-left: 400px;"
-                            data-version="v1"
-                            data-size="medium"
-                            data-locale="en_US"
-                            data-type="horizontal"
-                            data-theme="dark"
-                            data-vanity="christopherrisley"
-                            class="LI-profile-badge"
-                    >
-                        <a class="LI-simple-link"
-                           href='https://www.linkedin.com/in/christopherrisley?trk=profile-badge'></a>
-                    </div>
                     <nav>
                         <ul class="nav masthead-nav">
                             <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="https://www.linkedin.com/in/christopherrisley/" target="_blank">Experience</a>
-                            </li>
-                            <li><a href="https://github.com/CrizR" target="_blank">GitHub</a></li>
+                            <li><a href="dlbs/Resume%20V3.pdf">Resume</a></li>
                             <li><a href="projects.html">Projects</a></li>
                         </ul>
                     </nav>
-                    <iframe src="http://githubbadge.appspot.com/CrizR"
-                            style="
-                            width: 300px;
-                            height: 250px;
-                            margin-top: -43px;
-                            background: #2F3336;
-                            padding-top: 20px;
-                            margin-right: 400px;
-                            border-radius: 25px;
-                            float: right;
-                            border: 0;
-                            overflow: hidden;"
-                            frameBorder="0"
-                            class="floated_div"
-                    >
-                    </iframe>
                 </div>
             </div>
 
-            <article class="main">
+            <article style = "margin-top: -4%;" class="main">
                 <div class="avatar">
                     <img class="me" src="images/avatar.jpg" alt="Chris Risley Avatar">
+
                 </div>
                 <section class="container">
                     <div class="inner-container">
-                        <h3>About Me</h3>
+                        <h1>About Me</h1>
+
                         <p class="text">
-                            Born in Portola Valley, CA in the heart of Silicon Valley, I've always been interested in
-                            the world
-                            of start-ups and technology. I'm currently studying computer science at Northeastern
-                            University where I've
-                            been taught the fundamentals of programming, discrete math, data structures, database
-                            management, web development, and more.
+
+                            Born in Portola Valley, CA in the heart of Silicon Valley,
+                            I’ve always been interested in the world of start-ups and technology.
+                            I’m currently a third year computer science at Northeastern University
+                            with experience in Java, HTML, CSS, PHP, Python, C++, C, SQL, and more.
+                            I’m interested in both front and back end software development with a
+                            slight preference for front end. I have some experience building websites
+                            and applications in a professional setting. I’m a hard worker,
+                            I’m persistent, creative and passionate. I’m interested in learning more
+                            about machine learning, artificial intelligence, block chain, and algorithmic trading.
+                            When I can, I try to go rock climbing / hiking up in Maine/New Hampshire while at school
+                            or in the Rockies when back in California. In a co-op/internship, I’m looking for a company
+                            with a strong community where I can work as a team member to either help build a product
+                            that clients or customers will use or develop an underlying tool that helps protect or
+                            improve the company. I’m pretty open to trying new things, and I’m still trying to
+                            determine what specific area I’d like to focus on for my career.
+                            <a style = "color: #2aabd2;" class = href="dlbs/About%20Me.pdf">More</a>
                         </p>
                     </div>
                 </section>
 
                 <section class="container">
                     <div class="inner-container">
-                        <h1>Hobbies</h1>
+                        <h1>Interests</h1>
                         <p class="text">
                             I enjoy rock climbing, mountaineering, dirt biking, and hiking. I've also recently started
                             producing music with a software called Ableton. At Northeastern, I'm a part
@@ -128,8 +103,8 @@
                 </section>
 
                 <section class="container">
+                    <h3>Skills</h3>
                     <div class="inner-container">
-                        <h3>Skills</h3>
                         <ul class="skills" id="skill">
                             <li><span class="bar java"></span>
                                 <h3>Java</h3></li>
@@ -151,22 +126,14 @@
             </article>
         </div>
         <div class="mastfoot">
-            <script type="text/javascript">
-                baseUrl = "https://widgets.cryptocompare.com/";
-                var scripts = document.getElementsByTagName("script");
-                var embedder = scripts[ scripts.length - 1 ];
-                var cccTheme = {"General":{"background":"#2F3336","priceText":"#fff"},"Currency":{"color":"#fff"}};
-                (function (){
-                    var appName = encodeURIComponent(window.location.hostname);
-                    if(appName==""){appName="local";}
-                    var s = document.createElement("script");
-                    s.type = "text/javascript";
-                    s.async = true;
-                    var theUrl = baseUrl+'serve/v3/coin/header?fsyms=ETH,BTC,XRP,LTC&tsyms=USD';
-                    s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-                    embedder.parentNode.appendChild(s);
-                })();
-            </script>
+            <div class="test">
+                <a href="https://www.facebook.com/risleychris"><p>Facebook</p></a>
+                <a href="mailto: risley.c@husky.neu.edu"><p>Email</p></a>
+                <a href="https://www.linkedin.com/in/christopherrisley/"><p>Linkedin</p></a>
+                <a href="https://github.com/CrizR"><p>Github</p></a>
+                <a href="#"><p>(650)521-1067</p></a>
+                </div>
+        </div>
         </div>
     </div>
 </div>
