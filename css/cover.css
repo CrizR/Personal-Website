@@ -173,7 +173,14 @@ body {
     z-index: 0;
     margin-bottom: 20px;
     border-radius: 25px;
+    transition: all .5s;
 }
+
+.container:hover {
+    background: #00b9b7;
+
+}
+
 
 @media all and (max-width: 1800px) {
     .floated_div {
@@ -574,9 +581,8 @@ body {
     width: 40%;
     display: inline-block;
     background: #2F3336;
-    margin: 50px;
-    margin-top: 20px;
-    border-radius: 100px;
+    margin: 20px 50px 50px;
+    border-radius: 30px;
     border: 1px solid white;
     transition: all 0.5s cubic-bezier(0.6, -0.6, 0.2, 1.5);
 
@@ -591,8 +597,7 @@ body {
 }
 
 .project-body:hover{
-    background: red;
-
+    background: #00b9b7;
 }
 
 
@@ -812,6 +817,7 @@ footer {
 }
 .test a {
     color: #fff;
+    border: 1px solid white;
     background: #2F3336;
     border-radius: 4px;
     text-align: center;
@@ -826,7 +832,7 @@ footer {
     transition: all .5s;
 }
 .test a:hover {
-    background: #ff0000;
+    background: #00b9b7;
 }
 .test a:hover p {
     border-radius: 30px;
