@@ -810,12 +810,15 @@ h2.f4.text-normal.mb-3 {
 
 
 footer {
-    background: none;
+    position: fixed;
+    margin-top: -150px;  /* negative value of footer height */
+    height: 150px;
+    clear: both;
 }
-.test {
+.foot_class {
     margin-top: 125px;
 }
-.test a {
+.foot_class a {
     color: #fff;
     border: 1px solid white;
     background: #2F3336;
@@ -831,15 +834,15 @@ footer {
     margin: 0 2px;
     transition: all .5s;
 }
-.test a:hover {
+.foot_class a:hover {
     background: #00b9b7;
 }
-.test a:hover p {
+.foot_class a:hover p {
     border-radius: 30px;
     bottom: 35px;
     visibility: visible;
 }
-.test a p {
+.foot_class a p {
     color: #666;
     position: absolute;
     bottom: 0;
@@ -853,7 +856,7 @@ footer {
     visibility: hidden;
     transition: all 0.5s cubic-bezier(0.6, -0.6, 0.2, 1.5);
 }
-.test a p:before {
+.foot_class a p:before {
     content: '';
     width: 0;
     height: 0;
@@ -864,18 +867,18 @@ footer {
     bottom: -5px;
     left: 40px;
 }
-.test a:nth-of-type(1):before {
+.foot_class a:nth-of-type(1):before {
     content: '\f09a';
 }
-.test a:nth-of-type(2):before {
+.foot_class a:nth-of-type(2):before {
     content: '\f0e0';
 }
-.test a:nth-of-type(3):before {
+.foot_class a:nth-of-type(3):before {
     content: '\f08c';
 }
-.test a:nth-of-type(4):before {
+.foot_class a:nth-of-type(4):before {
     content: '\f126';
 }
-.test a:nth-of-type(5):before {
+.foot_class a:nth-of-type(5):before {
     content: '\f10b';
 }
